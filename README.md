@@ -4,10 +4,9 @@ The `checkCashRegister()` function is a JavaScript function that helps determine
 
 ## Function Signature
 
-```javascript
-function checkCashRegister(price, cash, cid)
-
-
+```javascript 
+function checkCashRegister(price, cash, cid);
+```
 ## Parameters
     price (number): The purchase price of the item.
     cash (number): The payment provided by the customer.
@@ -30,6 +29,7 @@ The checkCashRegister() function always returns an object with two keys:
 console.log(checkCashRegister(19.5, 20, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]));
 // Output: { status: "OPEN", change: [["QUARTER", 0.5]] }
 
+```
 In this example, the purchase price is $19.5, and the customer provides $20. The cash-in-drawer consists of various currency units with their respective amounts. The function calculates the change due and determines that it can provide a quarter ($0.25) in change. Hence, the status is "OPEN," and the change is an array with the currency unit "QUARTER" and the amount $0.5.
 
 
